@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><!--Especifica la codificación de caracteres, asegurando que todos los símbolos y letras se muestren correctamente-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Define cómo debe escalarse la página en dispositivos móviles, siendo vital para la optimización móvil (diseño responsive). -->
+        <title>Ejercicio 1</title>
+
+        <link rel="stylesheet" href="estilos.css"><!--rel establece que tipo de archivo voy a vincular y href es la ruta a la ubicacion del archivo -->
+    </head>
+    <body>
+        <main class="cv">
+        <section class="encabezado"> <!--Representa una seccion tematica-->
+            <div class="datos personales"><!--Sirve para agrupar en un contenedor/caja ya sea para organizar o dar estilo-->
+                <p>Nombre y Apellido</p>
+                <p>Edad</p>
+                <p>Domicilio</p>
+                <p>Nacionalidad</p>
+                <p>Documento</p>
+            </div>
+
+            <div class="imagen">
+                <p>IMAGEN</p>
+            </div>
+        </section>
+
+        
+            <section>
+                <h2>Experiencia laboral</h2>
+                <ul><!--Lista desordenada. Se muestra con viñetas-->
+                    <li><a href="empresa1.html">Empresa 1</a></li><!--li es el elemento de la lista-->
+                    <li><a href="empresa2.html">Empresa 2</a></li>
+                    <li><a href="empresa3.html">Empresa 3</a></li>
+                </ul>
+                
+            </section>
+
+            <section>
+                <h2>Estudios</h2>
+                <ul>
+                    <li><a href="universidad.html">Universidad</a></li>
+                        <ul> <!--Debo crear una sublista-->
+                            <li><p>Carrera 1</p></li>
+                        </ul>
+                    
+                    <li><a href="cursos.html">Cursos</a></li>
+                        <ul>
+                            <li><p>Curso 1</p></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="secundario.html">Secundario</a></li>
+                        <ul>
+                            <li><p>Colegio 1</p></li>
+                        </ul>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+/* Reinicio básico */
+* {
+    box-sizing: border-box; /* El padding y borde no suman al ancho total */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+
+    /* --- REQUISITOS DE LA CONSIGNA --- */
+    width: 80%;             /* 80% de la pantalla en ancho */
+    height: 100vh;          /* 100% de la pantalla en alto */
+    margin: 0 auto;         /* Centrado horizontalmente */
+    border: 0.1rem solid black; /* Borde para que se vea el contenedor */
+    position: relative;     /* Para que el header fijo se posicione respecto a este contenedor */
+    overflow: hidden;       /* Evita que el contenido se salga del borde del body */
+}
+
+/* --- CABECERA FIJA --- */
+header {
+    position: absolute; /* Se posiciona respecto al body (que es relative) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* --- CONTENIDO PRINCIPAL CON SCROLL --- */
+main {
+    position: absolute; /* Se posiciona respecto al body */
+    top: 4rem;          /* Empieza justo debajo del header */
+    bottom: 0;          /* Llega hasta el final del body */
+    width: 100%;
+    overflow-y: auto;   /* Permite el scroll vertical SOLO dentro de este contenedor */
+    padding: 2rem 7%; /* Espaciado interno para que el contenido no toque los bordes */
+    background-color: #f9f9f9; /* Un fondo claro para diferenciar */
+}
+
+/* --- ÍNDICE DE RECETAS --- */
+.indice {
+    margin-bottom: 2rem;
+}
+
+
+.indice ul li {
+    margin-bottom: 0.5rem;
+}
+
+.indice ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.indice ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- TARJETAS DE RECETAS --- */
+.receta {
+    border: 0.1rem solid black;
+    border: 2rem; /* Bordes redondeados como en la imagen */
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+    background-color: #dbeafe; /* Color celeste claro para las recetas */
+}
+
+.receta-header {
+    display: flex;
+    justify-content: space-between; /* Título a la izquierda, link a la derecha */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.link-indice {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,59 @@
+* {/*Selector universal, selecciona todos los elementos del documento*/
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 80%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.144);
+    overflow-x: hidden;/*Controla que el contenido no sobresalga del ancho de la pantalla, de forma que lo que sobresalga se oculte y no se pueda ver. Esto evita que haya scroll horizontal*/
+}
+
+.encabezado { /*El punto indica que es un selector de clase*/
+    display: flex;/*Permite que los elementos hijos del bloque, diferenciados por un <div> en el index.html, se dispongan uno al lado del otro*/
+    justify-content: space-between;
+    align-items: flex-start;/*Alinea los elementos al comienzo del contenedor en el eje principal. Existe tambien align-items: center; y align-items: flex-end;*/
+}
+
+.imagen {
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;/*Permite que la imagen cubra todo el espacio definido manteniendo las proporciones originales para evitar que se deforme*/
+    border-radius: 1.5rem;/*border-radius permite redondear las esquinas de un elemento, en este caso la imagen, de forma que se vea más estético y agradable a la vista*/
+    border: 0.1rem solid black;
+    background-color: rgb(202, 194, 194);
+}
+
+.imagen p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv {
+    margin: 0 auto;/*margin es el espacio fuera del elemento, separandolo de otros elementos. El valor auto centra el elemento en la pantalla*/
+    padding: 3rem;/*padding es el espacio dentro del elemento, separando el contenido de los bordes del elemento*/
+    background-color: rgba(128, 128, 128, 0.14);
+}
+
+/*Para cada subpagina correspondiente a Experiencia laboral y Estudios*/
+.detalle {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.detalle img {
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.detalle iframe {
+    width: 100%;
+    min-height: 100%;
+    border: 0;
+}

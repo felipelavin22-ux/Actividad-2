@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;/*Lo que hace box-sizing: border-box es que el ancho y alto de un elemento se calculen incluyendo el padding y el borde, de forma que no se sumen al ancho y alto del elemento, evitando que se desborde del contenedor*/
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;/*Controla que el contenido no sobresalga del ancho de la pantalla, de forma que lo que sobresalga se oculte y no se pueda ver. Esto evita que haya scroll horizontal*/
+}
+
+body {
+    width: 80%;
+    height: 100vh;/*height: 100vh; permite que el elemento tenga una altura igual a la altura de la ventana del navegador, de forma que el contenido se ajuste al tamaño de la pantalla y no se desborde*/
+    margin: 0 auto;
+    border: 0.1rem solid black;/*border es la propieddad que permite agregar un borde alrededor del elemento, el valor 0.1rem indica el grosor del borde, solid indica que el borde es solido y black indica el color del borde*/
+
+    position: relative;/*Permite que los elementos con position: absolute dentro de este elemento puedan tomarlo como referencia*/
+
+    overflow: hidden;
+}
+
+header {
+    height: 4rem;
+    border-bottom: 0.1rem solid black;/*border-bottom es la propiedad que permite agregar un borde en la parte inferior del elemento, el valor 0.1rem indica el grosor del borde, solid indica que el borde es solido y black indica el color del borde*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    width: 100%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav span {
+    margin: 0 0.5rem;
+}
+
+main {
+    position: absolute;/*position: absolute; permite que el elemento se posicione de forma absoluta respecto a su contenedor, en este caso el body, y no respecto a la ventana del navegador. Esto permite que el elemento se mantenga en su lugar aunque se haga scroll en la página*/
+
+    top: 4rem;
+    bottom: 4rem;
+
+    width: 100%;
+
+    overflow-y: auto;/*overflow-y: auto; permite que el contenido del elemento se desplace verticalmente si es necesario, de forma que se pueda ver todo el contenido aunque no quepa en la pantalla. Esto permite que el contenido se mantenga dentro del contenedor y no se desborde*/
+
+    padding: 2rem 7%;
+}
+
+.receta1{
+    border: 0.1rem solid black;
+
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    margin-bottom: 1rem;/*margin-bottom: 1rem; permite agregar un margen de 1rem en la parte inferior del elemento, de forma que se separe del siguiente elemento. Esto permite que los elementos no se vean pegados entre sí y se vea más ordenado*/
+
+    padding: 1rem 2rem;
+}
+
+.receta2{
+    border: 0.1rem solid black;
+
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    margin-bottom: 1rem;
+
+    padding: 1rem 2rem;
+}
+
+.receta1 h2, .receta2 h2 {
+    text-align: center;
+    
+    margin-top: 0;/*Agrega espacio por fuera y arriba del elemento*/
+    
+}
+
+
+
+.imagen {
+    width: 80%;
+    height: 100%;
+    
+    border: 0.1rem solid black;
+
+    margin: 0 auto;/*margin: 0 auto; permite centrar el elemento horizontalmente dentro de su contenedor, en este caso la imagen dentro del div que la contiene*. 0 significa no dejar margen* y auto significa que el margen se ajusta automáticamente para centrar el elemento*/
+    display: flex;
+    justify-content: center;
+    align-items: center;/*align-items: center; permite centrar el contenido del elemento verticalmente dentro de su contenedor, en este caso la imagen dentro del div que la contiene*/
+}
+
+
+footer {
+    height: 4rem;
+
+    border-top: 0.1rem solid black;/*border-top es la propiedad que permite agregar un borde en la parte superior del elemento, el valor 0.1rem indica el grosor del borde, solid indica que el borde es solido y black indica el color del borde*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
